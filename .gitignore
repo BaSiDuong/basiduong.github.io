@@ -22,6 +22,7 @@ Thumbs.db
 .cache
 .project
 .settings
+.codio
 .tmproj
 *.esproj
 nbproject
