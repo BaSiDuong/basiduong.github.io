@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:	pygments
 
 # Permalinks
 permalink:        pretty
@@ -21,4 +21,4 @@ author:
 version:          1.0.1
 
 github:
-  repo:           https://github.com/poole/lanyon
+  repo:           https://github.com/BaSiDuong/basiduong.github.io
