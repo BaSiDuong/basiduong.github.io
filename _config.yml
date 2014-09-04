@@ -9,7 +9,7 @@ permalink:        pretty
 title:            Ba Si Duong
 tagline:          'Blog'
 description:      'Ba Si Duong Blog'
-url:              http://www.basiduong.com
+url:              http://basiduong.com
 baseurl:          '/'
 paginate:         5
 
