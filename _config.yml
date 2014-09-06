@@ -1,15 +1,15 @@
 # Dependencies
-markdown:         redcarpet
+#markdown:         redcarpet
 highlighter:	pygments
 
 # Permalinks
-permalink:        pretty
+permalink:        none
 
 # Setup
 title:            Ba Si Duong
 tagline:          'Blog'
 description:      'Ba Si Duong Blog'
-url:              http://basiduong.com
+url:              https://basiduong.com
 baseurl:          '/'
 paginate:         5
 
