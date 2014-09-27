@@ -26,19 +26,26 @@ plugins:     ./_plugins
 layouts:     ./_layouts
 data_source: ./_data
 
+sass:
+ sass_dir:    _sass
+ style:       :compressed
+ 
 #
-archive_path: /archive.html
-categories_path : /categories.html
-tags_path : /tags.html
-atom_path : /atom.xml
-rss_path : /rss.xml
+archive_path:  /archive.html
+categories_path: /categories.html
+tags_path :    /tags.html
+atom_path :    /atom.xml
+rss_path :     /rss.xml
 
-collections: null
+collections:
+ docs:
+  output: true
+  permalink: /docs/:path/
 
 # Handling Reading
 safe:         false
 include:      [".htaccess"]
-exclude:      [Gemfile.lock, Gemfile,README.md,LICENSE.md,LICENSE,CNAME]
+exclude:      [Gemfile.lock, Gemfile,README.md,LICENSE.md,LICENSE,CNAME,Rakefile]
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
@@ -74,7 +81,7 @@ baseurl: / # does not include hostname
 relative_permalinks: false
 
 # Outputting
-permalink:     /:categories/:year/:month/:day/:title
+permalink:     /:categories/:year/:month/:title/
 paginate_path: /page:num
 timezone:      Asia/Ho_Chi_Minh
 
