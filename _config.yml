@@ -36,8 +36,8 @@ defaults:
      layout: "blog"
   -
     scope:
-      path: "projects"
-      type: "pages"
+     path: "projects"
+     type: "pages"
     values:
-      layout: "project" # overrides previous default layout
-      author: "Mr. Duong"
+     layout: "project" # overrides previous default layout
+     author: "Mr. Duong"
