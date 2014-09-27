@@ -26,3 +26,10 @@ github:
 exclude: [Gemfile.lock, Gemfile,README.md]
 timezone: Asia/Ho_Chi_Minh
 lsi: true
+
+defaults:
+ -
+ scope:
+  path: "" # an empty string here means all files in the project
+ values:
+  layout: "default"
