@@ -23,5 +23,5 @@ version:          1.0.2
 github:
   repo:           https://github.com/BaSiDuong/basiduong.github.io
 
-exclude: Gemfile.lock, Gemfile
+exclude: [Gemfile.lock, Gemfile,README.md]
 timezone: Asia/Ho_Chi_Minh
