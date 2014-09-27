@@ -28,8 +28,16 @@ timezone: Asia/Ho_Chi_Minh
 lsi: true
 
 defaults:
- -
- scope:
-  path: "" # an empty string here means all files in the project
- values:
-  layout: "default"
+  -
+    scope:
+     path: ""
+     type: "posts"
+    values:
+     layout: "blog"
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project" # overrides previous default layout
+      author: "Mr. Duong"
