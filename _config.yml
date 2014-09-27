@@ -1,33 +1,85 @@
-# Dependencies
-# markdown:         redcarpet
-# highlighter:	pygments
-
-# Permalinks
-permalink:        none
-
 # Setup
 title:            Ba Si Duong
 tagline:          'Blog'
 description:      'Ba Si Duong Blog'
 url:              https://basiduong.com
-baseurl:          '/'
 paginate:         5
 
 author:
   name:           'Ba Si Duong'
-  url:            https://twitter.com/basiduong
-
+  email:          duong@basiduong.com
+  flickr:         basiduong
+  github :        basiduong
+  twitter :       basiduong
+  facebook:       basiduong
+  feedburner :    basiduong
+  linkedin:       basiduong
+  googleplus:     basiduong
+  
 # Custom vars
 version:          1.0.2
 
-github:
-  repo:           https://github.com/BaSiDuong/basiduong.github.io
+# Where things are
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
+data_source: ./_data
 
-exclude: [Gemfile.lock, Gemfile,README.md]
-timezone: Asia/Ho_Chi_Minh
-lsi: true
+#
+archive_path: /archive.html
+categories_path : /categories.html
+tags_path : /tags.html
+atom_path : /atom.xml
+rss_path : /rss.xml
 
-defaults:
+collections: null
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      [Gemfile.lock, Gemfile,README.md,LICENSE.md,LICENSE,CNAME]
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+textile_ext:  "textile"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      true
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:
+ - jekyll-mentions
+ - jemoji
+ - jekyll-redirect-from
+ - jekyll-sitemap
+
+# Conversion
+markdown:    kramdown
+highlighter: pygments
+lsi:         true
+excerpt_separator: "\n\n"
+
+# Serving
+detach:  false
+port:    4000
+host:    0.0.0.0
+baseurl: / # does not include hostname
+
+# Backwards-compatibility
+relative_permalinks: false
+
+# Outputting
+permalink:     /:categories/:year/:month/:day/:title
+paginate_path: /page:num
+timezone:      Asia/Ho_Chi_Minh
+
+quiet:    false
+defaults: 
   -
     scope:
      path: ""
@@ -40,4 +92,37 @@ defaults:
      type: "pages"
     values:
      layout: "project" # overrides previous default layout
-     author: "Mr. Duong"
+
+# Markdown Processors
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+  fenced_code_blocks: true
+
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:      true
+  footnote_nr:   1
+  entity_output: as_char
+  toc_levels:    1..6
+  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  use_coderay:   false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
+
+redcloth:
+  hard_breaks: true
