@@ -7,12 +7,12 @@ paginate:         5
 
 author:
   name:           'Ba Si Duong'
-  email:          duong@basiduong.com
+  email:          contact@basiduong.com
   flickr:         basiduong
-  github :        basiduong
-  twitter :       basiduong
+  github:         basiduong
+  twitter:        basiduong
   facebook:       basiduong
-  feedburner :    basiduong
+  feedburner:     basiduong
   linkedin:       basiduong
   googleplus:     basiduong
   
@@ -28,18 +28,18 @@ data_source: ./_data
 
 sass:
  sass_dir:    _sass
- style:       :compressed
+ style:       compressed
  
-#
-archive_path:  /archive.html
+# custom
+archive_path:    /archive.html
 categories_path: /categories.html
-tags_path :    /tags.html
-atom_path :    /atom.xml
-rss_path :     /rss.xml
+tags_path:       /tags.html
+atom_path:       /atom.xml
+rss_path:        /rss.xml
 
 collections:
  docs:
-  output: true
+  output:    true
   permalink: /docs/:path/
 
 # Handling Reading
@@ -73,9 +73,9 @@ excerpt_separator: "\n\n"
 
 # Serving
 detach:  false
-port:    4000
+port:    9510
 host:    0.0.0.0
-baseurl: / # does not include hostname
+baseurl: "" # does not include hostname
 
 # Backwards-compatibility
 relative_permalinks: false
