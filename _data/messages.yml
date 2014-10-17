@@ -1,0 +1,7 @@
+locales:
+    en:
+        example: "example"
+        home:    "Home"
+    vn:
+        example: "Ví dụ"
+        home:    "Trang chủ"
