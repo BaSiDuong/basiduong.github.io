@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: en
 title: 'A Wild Jekyll 2.4.0 Appeared!'
 date: 2014-09-09 21:10:33 -0700
 author: parkr

@@ -1,7 +1,16 @@
 locales:
     en:
         example: "example"
-        home:    "Home"
+        
     vn:
         example: "Ví dụ"
+        
+navigation:
+    en:
+        home:    "Home"
+        about:   "About"
+        
+    vn:
         home:    "Trang chủ"
+        about:  "Giới thiệu"
+        

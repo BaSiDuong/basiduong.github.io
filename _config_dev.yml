@@ -87,6 +87,7 @@ paginate_path: /page:num
 timezone:      Asia/Ho_Chi_Minh
 
 quiet:    false
+
 defaults: 
   -
     scope:
@@ -100,6 +101,18 @@ defaults:
      type: "pages"
     values:
      layout: "project" # overrides previous default layout
+  -
+    scope:
+     path: _posts/en
+    values:
+     layout: default
+     lang: en
+  -
+    scope:
+     path: _posts/vn
+    values:
+     layout: default
+     lang: vn    
 
 # Markdown Processors
 maruku:
