@@ -1,23 +1,3 @@
-# Setup
-title:            Ba Si Duong
-tagline:          'Blog'
-description:      'Ba Si Duong Blog'
-url:              https://basiduong.com
-paginate:         5
-
-author:
-  name:           'Ba Si Duong'
-  email:          contact@basiduong.com
-  flickr:         basiduong
-  github:         basiduong
-  twitter:        basiduong
-  facebook:       basiduong
-  feedburner:     basiduong
-  linkedin:       basiduong
-  googleplus:     basiduong
-  
-# Custom vars
-version:          1.0.2
 
 # Where things are
 source:      .
@@ -48,12 +28,11 @@ include:      [".htaccess"]
 exclude:      [Gemfile.lock, Gemfile,README.md,LICENSE.md,LICENSE,CNAME,Rakefile]
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
-markdown_ext: "markdown,md"
-textile_ext:  "textile"
+
 
 # Filtering Content
 show_drafts: true
-limit_posts: 1
+limit_posts: 0
 future:      true
 unpublished: false
 live:        false
@@ -84,7 +63,7 @@ relative_permalinks: false
 # Outputting
 permalink:     /:categories/:year/:month/:title/
 paginate_path: /page:num
-timezone:      Asia/Ho_Chi_Minh
+
 
 quiet:    false
 
@@ -114,36 +93,3 @@ defaults:
      layout: default
      lang: vn    
 
-# Markdown Processors
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-  fenced_code_blocks: true
-
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids:      true
-  footnote_nr:   1
-  entity_output: as_char
-  toc_levels:    1..6
-  smart_quotes:  lsquo,rsquo,ldquo,rdquo
-  use_coderay:   false
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
-
-redcloth:
-  hard_breaks: true
